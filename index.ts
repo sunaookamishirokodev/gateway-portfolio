@@ -9,15 +9,8 @@ const client = new Client({
 
 const io = new Server({
     cors: {
-        origin: [
-            "http://localhost:3000",
-            "http://localhost:3001",
-            "https://me.shirokodev.site",
-            "https://me-sunaookamishirokodev.vercel.app/",
-            "https://me-sepia-ten.vercel.app/",
-            "https://me-git-main-sunaookamishirokodev.vercel.app/",
-        ],
-        credentials: false,
+        origin: ["http://localhost:3000", "http://localhost:3001", "https://me.shirokodev.site"],
+        credentials: true,
     },
 });
 
