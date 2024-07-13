@@ -97,7 +97,7 @@ client.on("presenceUpdate", (_, newP) => {
 
 client.on("ready", (bot) => {
     console.log("Login as", bot.user.username);
-    io.listen(4000);
+    io.listen(Number(process.env.PORT) || 1111);
 });
 
 client.login(process.env.TOKEN);
